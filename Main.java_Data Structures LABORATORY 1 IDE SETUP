@@ -1,0 +1,30 @@
+package mypackage;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your full name: ");
+
+        String fullName = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+
+        int age = scanner.nextInt();
+
+        int currentYear = 2025;
+
+        int yearWhen60 = currentYear + (60 - age);
+
+        System.out.println("Hello, " + fullName + "! You are " + age + " years old.");
+
+        System.out.println("You will turn 60 in the year " + yearWhen60 + ".");
+
+        scanner.close();
+
+    }
+
+}
